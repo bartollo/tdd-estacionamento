@@ -3,6 +3,7 @@ package tdd_java_estacionamento.tdd_java_estacionamento;
 import tdd_java_estacionamento.tdd_java_estacionamento.exceptions.EstacionamentoVeiculoFullException;
 import tdd_java_estacionamento.tdd_java_estacionamento.exceptions.VeiculoJaRegistradoException;
 import tdd_java_estacionamento.tdd_java_estacionamento.exceptions.VeiculoNaoRegistradoException;
+import tdd_java_estacionamento.tdd_java_estacionamento.model.Controle;
 import tdd_java_estacionamento.tdd_java_estacionamento.model.Veiculo;
 
 
@@ -13,6 +14,7 @@ public class GerenciadorEstacionamento {
 	private static final int maxVagas = 10;
 			
 	private Veiculo[] veiculos = new Veiculo[maxVagas];
+	private Controle[] controle = new Controle[maxVagas];
 	
 	public static GerenciadorEstacionamento getInstance() {
 		
